@@ -1,4 +1,4 @@
-## Task 2 - Nanaging Packages and Repositories
+## Task 2 - Managing Packages and Repositories
 
 This step covers basic package management: installing, removing, and adding third-party repositories.  
 In this case, we installed and removed some common utilities, and added the Fish Shell repository as a real-world example of pulling from outside the default Ubuntu repos.

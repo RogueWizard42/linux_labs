@@ -12,7 +12,7 @@ You can find a good explanation of the **permission string format** (e.g. `-rw-r
 
 And a guide to **numeric permission codes** (like `chmod 640`) here:
 👉 [https://chmodcommand.com](https://chmodcommand.com)
-You can also find the details on the permission number codes we used here: <insert website>
+
 
 ![files](files1.png)
 ![files2](files2.png)

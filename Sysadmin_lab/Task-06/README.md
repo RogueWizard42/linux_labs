@@ -1,58 +1,66 @@
-## Task 6 - Assigning a Static IP Address to a Linux Server
+## Task 6 – Building the Network Lab Machines
 
-In this task, I moved away from DHCP and gave `server1` a **static IP** address to prepare it for a private network configuration. This ensures consistent connectivity in my lab environment, especially once I start adding more machines and simulate networking scenarios.
+In this task, I built out the rest of my virtual lab environment by deploying three additional machines. These will form the foundation for the rest of the lab exercises ahead.
 
-### 💡 Note on Network Setup
+This task involved:
 
-I'm no longer using a live internet connection (NAT or Bridged). Instead, this lab is now configured on an **isolated private network** using VMware's **Host-only adapter (vmnet99)**. This prevents any real-world interference or risk. You’ll need to manually create a custom network adapter in your hypervisor of choice (VMware, VirtualBox, etc).  
-
-🧠 *This setup makes the lab safer and allows us to assign our own IP ranges without worrying about IP conflicts with the host system or real routers.*
-
----
-
-### Static IP Addressing
-
-I gave `server1` the IP address `10.99.99.10` and used a `/24` subnet for easy readability.
-
-**Planned Subnet for Lab Network:** `10.99.99.0/24`  
-**Gateway IP (placeholder):** `10.99.99.1`
-
-This subnet will be used across all machines in the lab. Here’s the full plan:
-
-| Machine      | Role       | Static IP       |
-|--------------|------------|-----------------|
-| Server1      | Main Server| `10.99.99.10`   |
-| Server2      | Secondary  | `10.99.99.11`   |
-| Lubuntu VM   | Client 1   | `10.99.99.20`   |
-| Mint VM      | Client 2   | `10.99.99.21`   |
+- Deploying multiple Linux-based virtual machines
+- Assigning static IP addresses
+- Connecting all machines to a private, isolated network (vmnet99)
+- Verifying proper addressing via `ip a` and `ip r`
 
 ---
 
-### Key Commands & Actions
+### Lab Machine Overview
 
-- `ip a` → Shows interface names (e.g., `ens33`) and IPs  
-- `ip r` → Displays current routing table  
-- `/etc/netplan/*.yaml` → Where static IP config is stored  
-- `sudo nano /etc/netplan/50-cloud-init.yaml` → Open the YAML config  
-- `sudo netplan apply` → Apply the config
+- **Server1** – Ubuntu Server 22.04  
+  IP: `10.99.99.10`
+
+- **Server2** – Ubuntu Server 22.04  
+  IP: `10.99.99.11`
+
+- **Mint** – Linux Mint desktop (for GUI-based tasks)  
+  IP: `10.99.99.20`
+
+- **Lubuntu** – Lightweight Lubuntu desktop (for variety and resource efficiency)  
+  IP: `10.99.99.21`
+
+Each machine uses the same:
+
+- **Subnet**: `10.99.99.0/24`  
+- **Gateway**: `10.99.99.1`  
+- **DNS**: `8.8.8.8`
 
 ---
 
-### YAML Configuration Overview
+### Network Adapter: vmnet99 (Private Network)
 
-This is what I placed in `/etc/netplan/50-cloud-init.yaml`:
+All machines were connected to a custom virtual network adapter created in VMware called `vmnet99`. This adapter does **not provide internet access** and exists solely for this internal lab.
 
-```yaml
-network:
-  version: 2
-  ethernets:
-    ens33:
-      dhcp4: no
-      addresses:
-        - 10.99.99.10/24
-      routes:
-        - to: default
-          via: 10.99.99.1
-      nameservers:
-        addresses: [8.8.8.8, 1.1.1.1]
+- This design keeps things self-contained and secure.
+- DHCP was disabled; each machine was manually assigned a static IP.
+- This will help us practice IP addressing and routing later.
 
+🔐 **Important Note:** The network is intentionally offline and isolated for security and realism. No risk of interfering with your host or external network.
+
+---
+
+### Topology Diagram
+
+The complete network topology (including MACs, hostnames, and logical layout) will be documented in **Packet Tracer**. A visual `.png` diagram and a `.pkt` file will be included in the final project repo.
+
+---
+
+### Screenshots
+
+#### Server1
+![Server1 IP](screenshots/server1ip.png)
+
+#### Server2
+![Server2 IP](screenshots/server2ip.png)
+
+#### Mint
+![Mint IP](screenshots/mintip.png)
+
+#### Lubuntu
+![Lubuntu IP](screenshots/lubuntuip.png)

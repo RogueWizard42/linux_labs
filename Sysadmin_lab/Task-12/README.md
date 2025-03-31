@@ -1,4 +1,4 @@
-## Task 08 - Automating Backups with Cron and Bash
+## Task 12 - Automating Backups with Cron and Bash
 
 In this task, I created a simple automated backup system using a Bash script and scheduled it to run daily using `cron`.
 

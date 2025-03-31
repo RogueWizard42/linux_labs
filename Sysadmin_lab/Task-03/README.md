@@ -1,6 +1,6 @@
 ## Task 3 - File System Navigation and Permissions
 
-For this task we practiced with creating files and folders in the CLI. Followed up by creating a sub folder, moving and renaming a file,
+For this task I practiced with creating files and folders in the CLI. Followed up by creating a sub folder, moving and renaming a file,
 finally changing permissions on the file and the folder. 
 
 ### Common Commands Used

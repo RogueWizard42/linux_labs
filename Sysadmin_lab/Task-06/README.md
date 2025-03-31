@@ -1,10 +1,10 @@
 ## Task 6 - Assigning a Static IP Address to a Linux Server
 
-In this task, we moved away from DHCP and gave `server1` a **static IP** address to prepare it for a private network configuration. This ensures consistent connectivity in our lab environment, especially once we start adding more machines and simulate networking scenarios.
+In this task, I moved away from DHCP and gave `server1` a **static IP** address to prepare it for a private network configuration. This ensures consistent connectivity in my lab environment, especially once I start adding more machines and simulate networking scenarios.
 
 ### 💡 Note on Network Setup
 
-We're no longer using a live internet connection (NAT or Bridged). Instead, this lab is now configured on an **isolated private network** using VMware's **Host-only adapter (vmnet99)**. This prevents any real-world interference or risk. You’ll need to manually create a custom network adapter in your hypervisor of choice (VMware, VirtualBox, etc).  
+I'm no longer using a live internet connection (NAT or Bridged). Instead, this lab is now configured on an **isolated private network** using VMware's **Host-only adapter (vmnet99)**. This prevents any real-world interference or risk. You’ll need to manually create a custom network adapter in your hypervisor of choice (VMware, VirtualBox, etc).  
 
 🧠 *This setup makes the lab safer and allows us to assign our own IP ranges without worrying about IP conflicts with the host system or real routers.*
 
@@ -12,7 +12,7 @@ We're no longer using a live internet connection (NAT or Bridged). Instead, this
 
 ### Static IP Addressing
 
-We gave `server1` the IP address `10.99.99.10` and used a `/24` subnet for easy readability.
+I gave `server1` the IP address `10.99.99.10` and used a `/24` subnet for easy readability.
 
 **Planned Subnet for Lab Network:** `10.99.99.0/24`  
 **Gateway IP (placeholder):** `10.99.99.1`
@@ -40,7 +40,7 @@ This subnet will be used across all machines in the lab. Here’s the full plan:
 
 ### YAML Configuration Overview
 
-This is what we placed in `/etc/netplan/50-cloud-init.yaml`:
+This is what I placed in `/etc/netplan/50-cloud-init.yaml`:
 
 ```yaml
 network:

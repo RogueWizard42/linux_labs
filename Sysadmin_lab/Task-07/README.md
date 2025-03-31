@@ -1,6 +1,6 @@
 ## Task 7 – Building the Network Lab Machines
 
-In this task, we built out the rest of our virtual lab environment by deploying three additional machines. These will form the foundation for the rest of the lab exercises ahead.
+In this task, I built out the rest of my virtual lab environment by deploying three additional machines. These will form the foundation for the rest of the lab exercises ahead.
 
 This task involved:
 

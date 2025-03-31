@@ -1,4 +1,4 @@
-## Task 11 - Assigning a Static IP Address to a Linux Server
+## Task 8 - Assigning a Static IP Address to a Linux Server
 
 In this task, I moved away from DHCP and gave `server1` a **static IP** address to prepare it for a private network configuration. This ensures consistent connectivity in my lab environment, especially once I start adding more machines and simulate networking scenarios.
 

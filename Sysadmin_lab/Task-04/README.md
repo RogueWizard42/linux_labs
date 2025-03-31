@@ -1,8 +1,8 @@
 ## Task 4 – User and Group Management
 
-In this task, we explored how to manage users and groups on a Linux system. This is a critical part of system administration, as it allows for proper access control and user role organization.
+In this task, I explored how to manage users and groups on a Linux system. This is a critical part of system administration, as it allows for proper access control and user role organization.
 
-We created two users (`alice` and `bob`), added them to a new group called `staff`, verified group membership, and then removed everything as a final cleanup step.
+I created two users (`alice` and `bob`), added them to a new group called `staff`, verified group membership, and then removed everything as a final cleanup step.
 
 ---
 

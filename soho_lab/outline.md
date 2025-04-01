@@ -2,7 +2,7 @@
 
 This topology represents the simulated layout of a Small Office/Home Office (SOHO) network, created in Cisco Packet Tracer to mirror the real-world setup being built in VMware.
 
-![packet tracer topology](screenhots/soho_lab.png)
+![packet tracer topology](screenshots/soho_lab.png)
 
 ---
 

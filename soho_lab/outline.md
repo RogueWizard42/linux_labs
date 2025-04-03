@@ -21,7 +21,7 @@ This diagram is used to:
 |---------------------|---------------------|------------------|---------------------------|
 | Mint01              | PC (wired)          | 192.168.50.10    | Simulated Mint install    |
 | Mint02              | PC (wired)          | 192.168.50.11    | Simulated Mint install    |
-| WirelessDevice01    | Smartphone (wireless)| 192.168.50.20   | Simulated via Android-x86 |
+| WirelessDevice01    | Smartphone (wireless)| 192.168.50.20   | Simulated via Lubuntu |
 | WirelessDevice02    | Printer (wireless)  | 192.168.50.21    | Simulated via Lubuntu     |
 | Wireless Router0    | Home Router         | 192.168.50.1     | Default gateway           |
 | The Magical Interwebs | Cloud              | N/A              | Represents internet access|
@@ -36,7 +36,7 @@ All IPs are statically assigned.
 ## Notes
 
 - **Router Simulation:** In the VMware lab, the router functionality will be handled by a Linux Ubuntu Server VM with dual NICs, IP forwarding, and NAT.
-- **Wireless Simulation:** Android-x86 or headless Linux VMs are used to simulate mobile and printer devices.
+- **Wireless Simulation:** Lubuntu 'functionally headless (meaning minimized and controlled through SSH) Linux VMs are used to simulate mobile and printer devices for this lab.
 - The cloud labeled *“The Magical Interwebs”* represents external connectivity and is not a functional part of the lab.
 
 ---

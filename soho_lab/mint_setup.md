@@ -49,7 +49,7 @@ sudo systemctl status ssh
 sudo reboot
 ```
 
-![mint02 ssh](screeshots/mint02_ssh.png)
+![mint02 ssh](screenshots/mint02_ssh.png)
 
 ---
 
@@ -66,13 +66,13 @@ Subnet:     255.255.255.0
 
 ![mint ips](screenshots/mint02_ip.png)
 
-** I'm not showing all the outbaound pings here, I did go to each machine to confirm that each could talk to all the others.
+**I'm not showing all the outbound pings here but I did go to each machine to confirm that each could talk to all the others.**
 
-![mint_02_ping](screenshots/mint_02.png)
+![mint_02_ping](screenshots/mint02_ping.png)
 
 ---
 
-** Now on to the last step of the set up, the lynch pin of this whole thing --> the server/router
+**Now on to the last step of the set up, the lynch pin of this whole thing --> the server/router**
 
 ---
 

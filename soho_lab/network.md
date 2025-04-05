@@ -108,7 +108,7 @@ sudo netfilter-persistent save
 ```
 **Testing to make sure that the devices in the network can reach the internet and DNS is functioning**
 
-1[insideping](screenshots/insideping.png)
+![insideping](screenshots/insideping.png)
 
 ---
 

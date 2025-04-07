@@ -64,7 +64,7 @@ scp system_status.py youruser@<vm_ip>:/home/youruser/<destination folder>
 *Note: to get the script to run with speedtest it must be run in a virtual environment/sandbox. See the link below for an explanation.*
 *Note: The try/except block was intentionally removed for testing clarity. And because it returns 0 for upload and download speed, and I'm not sure why.*
 
-[venv explanation](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/)
+![venv explanation](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/)
 
 
 ---

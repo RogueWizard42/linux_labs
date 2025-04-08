@@ -1,6 +1,6 @@
-# linux_learn
+# linux_labs
 
-Welcome to `linux_learn` — my personal forge for mastering the Linux operating system.
+Welcome to `linux_labs` — my personal forge for mastering the Linux operating system.
 
 This repo is where I build, break, fix, and explore Linux through a growing collection of hands-on projects. It’s part documentation, part lab journal, and part roadmap toward becoming a confident and skilled Linux user.
 

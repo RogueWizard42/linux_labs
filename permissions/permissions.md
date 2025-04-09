@@ -24,7 +24,7 @@ Linux is a multi-user system. Knowing how to control who can read, write, or exe
 - this is followed by 3 columns showing the permissions to the owner|group|others
 - followed my the number of *hard links* in this case **1**
 - the green section indicates the owner and group
-- the orange sectiion is the file size in bytes
+- the orange section is the file size in bytes
 - the rest is self explanatory
 
 ---
@@ -62,7 +62,7 @@ chmod o+r test.txt
 chmod 754 test.txt
 ls -l test.txt
 ```
-![chmod numeric](screeshots/chmodnumeric.png)
+![chmod numeric](screenshots/chmodnumeric.png)
 
 ---
 
@@ -155,7 +155,7 @@ chown frodo:security one_ring.txt
 ls -l
 ```
 
-![both](screeshots/both.png)
+![both](screenshots/both.png)
 
 ---
 

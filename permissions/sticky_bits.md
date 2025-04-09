@@ -106,7 +106,6 @@ rm readme.txt
 ```bash 
 getfacl /crypto
 ```
-![acl](screenshots/acl.png)
 
 Allow security group Read-only access
 ```bash
